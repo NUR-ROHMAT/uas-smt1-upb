@@ -1,7 +1,13 @@
 from model.daftar_nilai import ubah_data, hapus_data, cari_data
 from view.input_nilai import tambah_data
 
-print("===== APLIKASI PENGOLAHAN DATA NILAI MAHASISWA =====")
+print("=================================================")
+print("=\tAPLIKASI PENGOLAHAN DATA NILAI MAHASISWA\t=")
+print("=================================================")
+print("= NAMA\t\t: FEBRO HERDYANTO\t\t\t\t\t=")
+print("= NIM\t\t: 312010043\t\t\t\t\t\t\t=")
+print("= KELAS\t\t: TI.20.B.1\t\t\t\t\t\t\t=")
+print("=================================================")
 while True:
     print("MENU : \n 1. Tambah Data \n 2. Ubah Data \n 3. Hapus Data \n 4. Cari Data \n 5. Keluar Aplikasi")
     pilih = int(input("Pilih Menu (1/2/3/4/5) : "))
