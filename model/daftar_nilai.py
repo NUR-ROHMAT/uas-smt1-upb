@@ -17,13 +17,15 @@ def hapus_data(hxsiapa):
 
 def cari_data(csiapa):
     print("========== CARI DATA NILAI MAHASISWA ==========")
-    xdata = next(item for item in tampunglist if item['tnim'] == csiapa)
-    print("NIM : ", csiapa)
-    print("Nama : ", xdata['tnama'])
-    print("Nilai Tugas : ", xdata['ttugas'])
-    print("Nilai UTS : ", xdata['tuts'])
-    print("Nilai UAS : ", xdata['tuas'])
-    print("Nilai Akhir : ", xdata['takhir'])
+    if csiapa in tampunglist.keys():
+        print(tampunglist.keys())
+        print(tampunglist.items())
+        print("Nama\t\t: ", tampunglist[csiapa])
+        print("NIM\t\t: ", tampunglist[csiapa][0])
+        print("Nilai Tugas\t: ", tampunglist[csiapa][1])
+        print("Nilai UTS\t: ", tampunglist[csiapa][2])
+        print("Nilai UAS\t: ", tampunglist[csiapa][3])
+        print("Nilai Akhir\t: ", tampunglist[csiapa][4])
 
 
 def ubah_data(xsiapa):
@@ -86,4 +88,3 @@ def ubah_data(xsiapa):
             print("!!! === ERROR! Anda Memasukkan Pilihan yang Salah === !!!")
     else:
         print("!!! === ERROR! DATA TIDAK TERSEDIA === !!!")
-

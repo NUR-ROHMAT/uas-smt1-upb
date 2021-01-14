@@ -24,8 +24,8 @@ while True:
         hapus_data(hsiapa)
     elif pilih == 4:
         print(" Pencarian berdasarkan NIM ")
-        carinim = input("Masukkan NIM yang akan dicari : ")
-        cari_data(csiapa=carinim)
+        pencarian = input("Masukkan Nama yang akan dicari : ")
+        cari_data(csiapa=pencarian)
     elif pilih == 5:
         print("========== ANDA KELUAR DARI APLIKASI ==========")
         break
