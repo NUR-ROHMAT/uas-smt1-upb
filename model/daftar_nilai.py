@@ -18,9 +18,7 @@ def hapus_data(hxsiapa):
 def cari_data(csiapa):
     print("========== CARI DATA NILAI MAHASISWA ==========")
     if csiapa in tampunglist.keys():
-        print(tampunglist.keys())
-        print(tampunglist.items())
-        print("Nama\t\t: ", tampunglist[csiapa])
+        print("Nama\t\t: ", csiapa)
         print("NIM\t\t: ", tampunglist[csiapa][0])
         print("Nilai Tugas\t: ", tampunglist[csiapa][1])
         print("Nilai UTS\t: ", tampunglist[csiapa][2])
